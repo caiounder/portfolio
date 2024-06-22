@@ -1,0 +1,968 @@
+/*Thema Claro*/
+header {
+    /*Alinhamento do conteúdo*/
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    /*Sobreamento/Efeito Sombra*/
+    box-shadow: 0em .05em .5em .1em rgba(0, 0, 0, 0.2);
+    /*Tamanho e altura*/
+    height: 5em;
+    width: 100vw;
+    /*Posição padrão: relative | background: #fff*/
+    position: fixed;
+    background-color: rgb(247, 247, 247);
+}
+
+/*Configurações Menu*/
+/*Título*/
+.titulo-theme, .menu, .menu ul { 
+    align-items: center;
+    display: flex;
+}
+
+.titulo {
+    /*Cor | Tamanho (px)| Negrito (100-900)*/
+    color: var(--roxo-azul);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.titulo span {
+    /*Cor nome | Negrito*/
+    color: #000;
+    font-weight: 300;
+}
+
+.titulo-mobile {
+    display: none;
+}
+
+/*Menu*/
+.menu li {
+    /*Distancia | Estilo do lista*/
+    margin: 0em 1.5em;
+    list-style-type: none; /*none - nenhum*/
+}
+
+.menu li a {
+    /*Cor | Tamanho*/
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    /*Decoração do link (tirando o subliminado)*/
+    text-decoration: none;
+    padding: 0em .2em;
+}
+
+.menu li a:hover { /*Ao passar o mouse em cima, alteração ocorre: */
+    color: var(--azul-marinho);
+    transition: all .2s ease-in-out;
+}
+
+/*Configuração de opção de thema*/
+.theme {
+    /*Alinhamento e centralização*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /*Fundo e borda*/
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3em;
+    /*Distancia do título e espaçamento*/
+    margin-left: 1em;
+    padding: 1em;
+    /*Tamanho*/
+    font-size: 10px; /*Não aconselho fazer isso, porém fiz por gostar do jeito que ficou*/
+    height: 1em;
+    width: 1em;
+}
+
+.theme:hover {/*Ao passar o mouse por cima: */
+    /*Mudar icone*/
+    color: #fff891;
+    /*Alterar o cursor do mouse*/
+    cursor: pointer;
+    /*Alterar cor de fundo e borda*/
+    background-color: rgba(0, 0, 0, .8);
+    border: 2px solid rgba(0, 0, 0, .7);
+    /*Na entrada de transição*/
+    transition: all .0s ease;
+}
+
+/*Configurações menu mobile*/
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile span {
+    font-size: 33px;
+}
+
+.menu-mobile:hover {
+    transition: all 0s ease-in-out;
+    color: var(--roxo-azul);
+}
+
+.menu-mobile:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    margin-top: 1.5em;
+}
+
+.sub-menu li {
+    background-color: rgb(247, 247, 247);
+    border: .2em solid rgb(247, 247, 247);
+    border-radius: 1em;
+    font-weight: 600;
+    padding: .5em 1em;
+    margin-top: .5em;
+    margin-left: -1em;
+    
+    box-shadow: 0em .05em .3em .05em rgba(0, 0, 0, .5);
+}
+
+.sub-menu a {
+    color: rgba(29, 1, 94, 0.8);
+    text-decoration: none;
+}
+
+.sub-menu li:hover {
+    color: #fff;
+    font-weight: 600;
+    background-color: #4a26c0;
+}
+
+main {
+    width: 100vw;
+}
+
+.config {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 1.5em;
+}
+
+/*Configurações Apresentação*/
+.presentation {
+    /*Cor fundo*/
+    background: linear-gradient(190deg, rgb(167, 42, 100), var(--roxo-azul) 65vw);
+    /**/
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*Distanciamento interno padrão 3em 0em*/
+    padding: 10em 0em;
+    /*Distacimento top - caso position for fixed*/
+    padding-top: 10em;
+}
+
+.text-apresentation h1 {
+    /*Config fonte*/
+    color: var(--cinza-azul);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    /*Posição*/
+    padding-bottom: 1em;
+}
+
+/* Problema ocorrendo na linha em cima do título principal do header*/
+/* Parte before deletado */
+
+.linha { /*Utiliando div como linha costumizada | Problema do before resolvido*/
+    /*Cor e formato*/
+    background-color: #fff;
+    border-radius: 1em;
+    /*Tamanho e largura*/
+    height: .17em;
+    width: 5.75em;
+    /*Posição*/
+    margin-top: .2em;
+    margin-left: .8em;
+}
+
+.text-apresentation p {
+    color: #fff;
+    /*Config font*/
+    font-size: 22px;
+    font-weight: 300;
+    /*Tipo de texto (padrão: justify)*/
+    text-align: justify;
+    /*Largura do texto*/
+    width: 35em;
+    margin: .5em 0em;
+}
+
+.text-apresentation p span {
+    color: var(--cinza-azul);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.config-photo {
+    background: rgba(0, 0, 0, 0.05);
+    border: .15em solid rgba(0, 0, 0, 0.1);
+    border-radius: 10em;
+    padding: 1em;
+}
+
+.config-photo img {
+    border-radius: 10em;
+    padding: .5em;
+    width: 35vw;
+}
+
+.config-photo span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15em;
+
+    display: none; /*Mudar para block, caso não houver foto*/
+}
+
+.photo-top {
+    display: none;
+}
+
+/*Configurações Sobre Mim*/
+.aboutme {
+    background-color: hsl(0, 0%, 100%);
+    padding: 0em 2em;
+    padding-top: 6em;
+}
+
+.aboutme h1 {
+    background-color: #4a26c0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
+    width: 40vw;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.aboutme-estilo {
+    background: var(--roxo-azul);
+    border: .1em solid #4a26c0;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 4em;
+}
+
+.aboutme-text {
+    border-radius: 1em;
+    border: .5em solid #4a26c0;
+    padding: 3em;
+    width: 50vw;
+
+    margin: 1em;
+}
+
+.aboutme-text p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: .5em 0em;
+    text-align: justify;
+}
+
+/*Configurações gerais de hard e soft skill*/
+.aboutCareer {
+    /*Alinhamento*/
+    align-items: center;
+    justify-content: space-around;
+    /*Cor de fundo e espaçamento*/
+    background: linear-gradient(10deg, var(--azul-claro), var(--roxo-azul));
+    padding: 5em 0em;
+    /*Flexibilidade, distância e largura*/
+    display: flex;
+    margin: 3em 0em;
+    width: 100vw;
+}
+
+.aboutCareer h1 {
+    font-size: 3em;
+    background: none;
+    margin: 0em;
+    padding: 1em 0em;
+}
+
+/*Configurações gerais de alinhamento e button das skills*/
+.skillgeral {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.skillgeral button {
+    color: #17043b;
+}
+
+.skillgeral button:hover {
+    color: #ffffff;
+}
+
+.skillgeral h1 button {
+    font-size: .6em;
+}
+
+/*Configuração de todos os card*/
+.card {
+    /**/
+    background-color: #fff;
+    box-shadow: .1em .1em 1em .1em rgba(0, 0, 0, .3);
+    border-radius: 1em;
+    /**/
+    margin: 1em;
+    height: 20em;
+    width: 30em;
+}
+
+.card p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/*Configuração softskill*/
+.miniatura {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5em;
+
+    height: 5em;
+}
+
+.miniatura span {
+    background: var(--azul-claro);
+    padding: .5em;
+    border-radius: 2em;
+    margin-right: .5em;
+}
+
+/*Retirado o butão saber mais - SoftSkills*/
+
+.miniatura button:hover {
+    color: var(--roxo-azul)
+}
+
+/*Configuração hardskill*/
+.auxiliarProducao, .mecanicoUsinagem, .desenvolvimentoWeb {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+/*Configurações Card*/
+.card-hardskill h1 {
+    background: none;
+    color: var(--azul-claro);
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-hardskill h1 span {
+    color: #fff;
+    background-color: #ec3737;
+    border-radius: 1.5em;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: .7em;
+    margin-left: .5em;
+}
+
+.card-hardskill p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.card-hardskill span{
+    color: var(--azul-claro);
+    font-size: 5em;
+}
+
+.card-hardskill .card {
+    width: 25em;
+    padding: 3em 2em;
+    height: auto;
+}
+
+.desenvolvimentoWeb h1 span {
+    background-color: #4db92c;
+}
+
+.card-hardskill button {
+    background: var(--azul-claro);
+    color: #fff;
+
+    border-radius: 1em;
+    padding: .5em 1.5em;
+
+    margin-top: 1em;
+}
+
+.card-hardskill button:hover {
+    color: #fff;
+    background-color: rgba(0, 110, 255, 0.7);
+}
+
+/*Configurações projetos*/
+.projects {
+    flex-direction: row;
+    height: 50em;
+}
+
+.e-project {
+    display: flex;
+    margin: 0em 1em;
+    width: 50vw;
+    height: 75%;
+}
+
+.e-project h1 {
+    font-size: 2.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.estilo2 {
+    background: var(--azul-claro);
+    height: .2em;
+    margin: .1em 0em;
+    width: 3.5em;
+}
+
+/*Linha de divisão entre projetos e redes sociais*/
+.divisao {
+    background-color: rgba(0, 0, 0, .1);
+    height: 30em;
+    width: .1em;
+}
+
+/*Configurações Projetos*/
+.my-projects, .my-rSocial {
+    flex-direction: column;
+    width: 40vw;
+}
+
+.title-link {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-link a span {
+    padding: .2em;
+    font-size: 2.5em;
+}
+
+.title-link a {
+    border-radius: 1em;
+    color: #000;
+}
+
+.title-link a:hover {
+    color: #0b4881;
+    background-color: #6bb8ff;
+
+    transition: all .2s ease-in-out;
+
+}
+
+.name-projects {
+    border-bottom: .1em solid rgba(0, 0, 0, .1);
+    margin: 1em 2em;
+    padding: .5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-projects p  {
+    align-items: center;
+    display: flex;
+}
+
+.name-projects span {
+    background: var(--azul-claro);
+    border-radius: 1em;
+    height: .5em;
+    width: .5em;
+    
+    margin-right: 1em;
+}
+
+.name-projects button {
+    font-size: 16px;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+.btn-atual {
+    cursor: default;
+}
+
+.btn-acessar {
+    border: .1em solid rgba(0, 0, 0, 0);
+    padding: .5em;
+    border-radius: 1em;
+}
+
+.btn-acessar:hover {
+    border: .1em solid rgba(6, 184, 21, 0.5);
+}
+
+/*Configurações redes sociais*/
+.my-rSocial {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-rSocial .estilo3 {
+   background-color: rgba(0, 0, 0, .1);
+    height: 1px;
+    width: 40vw;
+    margin: 5em 3em;
+}
+
+.my-rSocial h1 {
+    margin-left: 1.4em;
+}
+
+.rSocial-atual {
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.rSocial-one a {
+    margin: 0em .2em;
+}
+
+.rSocial-one img {
+    width: 3em;
+}
+
+.contato {
+    margin-top: .5em;
+    margin-left: 3em;
+    flex-direction: column;
+}
+
+.contato p {
+    align-items: center;
+    display: flex;
+}
+
+.contato span {
+    color: var(--azul-claro);
+    margin-right: .2em;
+}
+ 
+/*Configurações desenvolvimento*/
+.development {
+    background: linear-gradient(to bottom, var(--azul-claro), var(--cinza-azul));
+
+    height: 50em;
+}
+
+/*Configurações footer*/
+footer {
+    /**/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /**/
+    background: var(--cinza-azul);
+    /**/
+    height: 7em;
+    width: 100vw;
+}
+
+footer p:first-of-type {
+    padding-bottom: .5em;
+}
+
+footer p span {
+    color: var(--azul-claro);
+    font-size: 19px;
+    font-weight: 400;
+}
+
+/*Retirado, planejamento futuro adicionar*/
+.development, .card button, .btn-acessar { 
+    display: none;
+}
+
+/*Responsividade de telas*/
+@media screen and (max-width: 1550px) {
+    .config-photo img {
+        width: 30vw;
+    }
+
+    @media screen and (max-width: 1390px) {
+        .config-photo img {
+            width: 30vw;
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+        .config-photo {
+            padding: .5em;
+        }
+
+        .text-apresentation p {
+            width: 30em;
+        }
+
+        .aboutCareer {
+            flex-direction: column;
+        }
+
+        .card-hardskill .card, .card-hardskill {
+            margin-bottom: 2em;
+        }
+
+        .card h1 {
+            width: 15em;
+        }
+
+        .card-hardskill {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .card-hardskill .card {
+            align-items: center;
+            display: flex;
+            justify-content: start;
+            width: 25vw;
+            height: 33em;
+        }
+    
+        .card-hardskill span {
+            margin-left: 1vw;
+        }
+    
+        .card-hardskill .card h1 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            font-size: 20px;
+        }
+    
+        .card-hardskill .card h1 span {
+            margin-top: 1em;
+            width: 10vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .presentation {
+        flex-direction: column;
+    }
+
+    .photo-right {
+        display: none;
+    }
+
+    .photo-top {
+        display: block;
+    }
+
+    .config-photo img{
+        width: 25em;
+    }
+
+    .text-apresentation {
+        margin-top: 3em;
+    }
+
+    .card-hardskill .card {
+        margin: 0em .7em;
+        width: 22.5vw;
+        height: auto;
+    }
+
+    .card-hardskill .card h1 {
+        font-size: 18px;
+    }
+
+    .card-hardskill .card p {
+        font-size: 16px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .my-projects, .my-rSocial {
+        margin-top: 4em;
+        margin-left: -25vw;
+    }
+
+    .my-rSocial {
+        margin-top: -5em;
+    }
+
+    .my-rSocial .estilo3  {
+        display: none;
+    }
+
+    .my-rSocial h1 {
+        margin-left: 0em;
+    }
+
+    .title-link {
+        width: 70vw;
+    }
+    
+    .cnt-h1 {
+        margin-top: 1em;
+    }
+
+    .rSocial-one {
+        margin-left: -1em;
+    }
+
+    .name-projects {
+        width: 65vw;
+    }
+
+    .divisao {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header .menu {
+        display: none;
+    }
+
+    header .menu-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .sub-menu {
+        margin-left: -10vw;
+    }
+
+    .config-photo {
+        padding: 0em;
+    }
+
+    .text-apresentation p {
+        font-size: 20px;
+        width: 80vw;
+    }
+
+    .aboutme h1 {
+        font-size: 28px;
+        width: 50vw;
+    }
+
+    .aboutme-estilo {
+        background: var(--roxo-azul);
+        padding: .2em;
+    }
+
+    .aboutme-text {
+        color: #fff;
+        width: 60vw;
+    }
+
+    .aboutme-text p {
+        font-size: 20px;
+    }
+
+    .aboutCareer h1 {
+        background: none;
+        font-size: 2.5em;
+    }
+
+    .card-hardskill {
+        flex-direction: column;
+    }
+
+    .card-hardskill .card {
+        margin: 1em 0em;
+        width: 25em;
+    }
+
+    .card-hardskill .card h1 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .card-hardskill .card p {
+        font-size: 18px;
+    }
+
+    .card-hardskill .card h1 span {
+        width: 7em;
+    }
+
+    .miniatura {
+        width: 75vw;
+    }
+
+    .my-projects, .my-rSocial {
+        margin-left: -30vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sub-menu {
+        margin-left: -15vw;
+    }
+
+    .person-photo img {
+        width: 25em;
+    }
+
+    .text-apresentation {
+        margin-top: 4em;
+    }
+
+    .text-apresentation p {
+        width: 20em;
+    }
+
+    .aboutme-text {
+        padding: 2em;
+    }
+
+    .aboutme-text p {
+        font-size: 18px;
+    }
+
+    .e-project h1 {
+        width: 50vw;
+    }
+
+    .card-hardskill .card {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .config-photo {
+        border-radius: 5em;
+    }
+
+    .person-photo img {
+        border-radius: 5em;
+        width: 75vw;
+    }
+
+    .text-apresentation p {
+        width: 80vw;
+    }
+
+    .aboutme h1 {
+        padding: .8em;
+    }
+
+    .aboutme-text {
+        width: 70vw;
+    }
+
+    .aboutCareer h1 {
+        width: 90vw;
+    }
+
+    .card-hardskill .card h1 {
+        font-size: 20px;
+    }
+
+    .card-hardskill .card p {
+        font-size: 16px;
+    }
+
+    .miniatura p {
+        font-size: 16px;
+    }
+
+    .e-project h1 {
+        width: 80vw;
+    }
+
+    .name-projects {
+        margin: .5em 0em;
+        margin-left: .5em;
+        width: 75vw;
+    }
+
+    .title-link {
+        width: 80vw;
+    }
+
+    .rSocial-atual {
+        margin: 1em 1.5em;
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .titulo {
+        display: none;
+    }
+
+    .titulo-mobile {
+        display: block;
+    }
+    
+    .text-apresentation h1 {
+        font-size: 25px;
+    }
+
+    .text-apresentation p {
+        font-size: 18px;
+    }
+
+    .aboutme-text {
+        padding: 1em;
+    }
+    
+    .aboutme h1 {
+        font-size: 20px;
+    }
+
+    .aboutme p {
+        font-size: 16px;
+    }
+
+    .aboutCareer h1 {
+        font-size: 2em;
+    }
+
+    .card-hardskill .card h1 {
+        font-size: 18px;
+    }
+
+    .card-hardskill .card p {
+        font-size: 14px;
+    }
+
+    .miniatura p {
+        font-size: 14px;
+    }
+}

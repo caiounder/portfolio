@@ -1,0 +1,57 @@
+@charset "UTF-8"; /*Deixar ou retirar por sua preferência*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* 
+Esse arquivo css é necessário para ser como uma padronização, caso houver além de uma página, 
+evitando a necessidade de colocar o mesmo tipo de formatação css, não sendo necessário refazer o mesmo objetivo.
+
+E por questão de organização.
+*/
+
+:root { 
+    /*Paleta de cores*/
+    --azul-marinho-claro: #3585FC;
+    --azul-marinho: #3546FC;
+    --azul-claro: #35C4FC;
+    --cinza-azul: #F2F3FC;
+    --cinza-roxo: #ebe0ff;
+    --roxo-azul: #6435FC;
+    --roxo-claro: #A635FC;
+    --roxo-meio-escuro: rgba(81, 11, 212, 0.7); /* opacity padrão 0.7 para deixar meio claro*/
+}
+
+* {
+    /*Retirando qualquer modificação padrão*/
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    /*Efeito geral*/
+    scroll-behavior: smooth;
+    transition: all .2s ease-in-out;
+    /*Estilo padrão da letra*/
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    /*Toda tela visível*/
+    height: 100vh;
+    width: 100vw;
+    /*Configurações extra*/
+    overflow-x: hidden; 
+}
+
+button {
+    border: none;
+    background: none;
+
+    font-size: 22px;
+    cursor: pointer;
+}
+
+ul li {
+    /*tirando bolinha padrão*/
+    list-style-type: none;
+}
+

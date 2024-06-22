@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
+    <title>Portfólio - Caio Mendes</title>
+    <!--Icone-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/theme-light.css">
+    <!--Google Icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="titulo-theme">
+            <!--Título / Banner Simples-->
+            <div class="titulo">Portfólio<span>@caiounder</span></div>
+            <div class="titulo titulo-mobile">@caiounder</div>
+            <!--Altera o tema da página-->
+            <div class="theme"><span class="material-symbols-outlined">dark_mode</span></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#presentation">Início</a></li>
+                <li><a href="#aboutme">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <!--<li><a href="#development">Desenvolvimento</a></li>--> <!--Adicionando futuramente-->
+            </ul>
+        </div>
+        <div class="menu-mobile"><span class="material-symbols-outlined">menu</span>
+            <ul class="sub-menu" id="sub-menu">
+                <a href="#presentation"><li>Início</li></a>
+                <a href="#aboutme"><li>Sobre mim</li></a>
+                <a href="#projects"><li>Projetos</li></a>
+                <!--<li><a href="#development">Desenvolvimento</a></li>--> <!--Adicionando futuramente-->
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="config presentation" id="presentation"> <!--Apresentação-->
+            <div class="person-photo photo-top">
+                <div class="config-photo">
+                    <img src="./img/person-photo.png" alt="">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+            </div>
+            <div class="text-apresentation">
+                <h1>Apresentação<div class="linha"></div></h1>
+                <p> Olá! Meu nome é Caio Mendes e sou mais uma daquelas pessoas apaixonadas pela área de tecnologia. Recentemente, 
+                    comecei minha jornada nesse mundo fascinante de desenvolvimento web. </p>
+                <p> Aqui nesse momento, você se encontra 
+                    no começo do meu portfólio, deslizando o scroll do mouse para baixo ou cliquando no menu "Sobre Mim" na parte superior do site, 
+                    estará percorrendo sobre um pouco da minha história, poderá ver os projetos que desenvolvi ou que serão desenvolvidos. 
+                    E ao mesmo tempo se clicar na pasta ao lado de Projetos, poderá verificar outros projetos, atividades e exercícios desenvolvidos em outras áreas.</p>
+            </div>
+            <div class="person-photo">
+                <div class="config-photo photo-right">
+                    <img src="./img/person-photo.png" alt="">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="config aboutme" id="aboutme"> <!--Sobre mim-->
+            <h1>Sobre mim</h1>
+            <div class="aboutme-estilo">
+                <div class="aboutme-text">
+                    <p> Tenho 22 anos. Sou apaixonado pela área desenvolvimento web, software e inteligência artificial (IA). 
+                        Já terminei o ensino médio e pretendo fazer uma faculdade de tecnologia. Tomei a decisão de me tornar um desenvolvedor 
+                        full-stack, sendo assim iniciando minha carreira no começo como desenvolvedor front-end para ter uma base bem sólida de 
+                        conhecimento, algoritmo, organização de código, tags, etc. E depois estarei caminhando em direção ao conhecimento de back-end.
+                    </p>
+                    <p> Fora da área de tecnologia tenho certificado de dois cursos do SENAI de aprendizagem industrial: 
+                        Auxiliar de Linha de Produção e Mecânico de Usinagem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="aboutCareer">
+                <!--Hard-skils-->
+                <div class="skillgeral hard-skill">
+                    <h1>Hard-Skill's<!--<button>@o que é?</button>--></h1>
+                    <div class="card-hardskill">
+                        <div class="card auxiliarProducao">
+                            <span class="material-symbols-outlined google-icon">person_book</span>
+                            <h1>Aux. Linha de Produção<span>SENAI</span></h1>
+                            <p> Responsável por atuar em diversas etapas do processo, como controlar o estoque de matéria-prima, 
+                                separar as peças para a montagem, conferir o funcionamento das máquinas, embalar os produtos, 
+                                realizar a limpeza e manutenção das instalações e atender a outras demandas de produção. </p>
+                            <button>Ler mais...</button>
+                        </div>
+                        <div class="card mecanicoUsinagem">
+                            <span class="material-symbols-outlined google-icon">Laptop_Chromebook</span>
+                            <h1>Mecânico de Usinagem<span>SENAI</span></h1>
+                            <p> Responsável por manejar metais pesados, lidar com maquinários industriais, desenvolver projetos em 
+                                (autoCAD, ares commander e solidworks), leitura e interpretação de desenhos técnicos. 
+                                Tendo capacidade de utilizar torno convencional, torno CNC, centro de usinagem, retifica, todos tipos
+                                de fresadora, etc. Entre mais funções profissionais e máquinas.</p>
+                            <button>Ler mais...</button>
+                        </div>
+                        <div class="card desenvolvimentoWeb">
+                            <span class="material-symbols-outlined google-icon">code</span>
+                            <h1>Desenvolvedor Web<span>Autodidata</span></h1>
+                            <p> Responsável pelo desenvolvimento visual de páginas web, layouts de sites, gestão de dados, otimização e manutenção de sites, 
+                                definindo linguagens, bancos de dados, armazenamento e atualização de informações. Tendo capacidade de criar e desenvolver 
+                                sites simples a complexos como landing, hotsite, portal, blog, one-page (página única), portfólio, ecommerce, institucional, etc.</p>
+                            <button>Ler mais...</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Soft-Skilss-->
+                <div class="skillgeral soft-skill">
+                    <h1>Soft-Skill's<!--<button>@o que é?</button>--></h1>
+                    <ul>
+                        <li class="card miniatura"><p><span></span>Adaptalidade</p></li>
+                        <li class="card miniatura"><p><span></span>Aprendizado Ativo</p></li>
+                        <li class="card miniatura"><p><span></span>Comunicação</p></li>
+                        <li class="card miniatura"><p><span></span>Criatividade</p></li>
+                        <li class="card miniatura"><p><span></span>Flexibilidade, resiliência e tolerância</p></li>
+                        <li class="card miniatura"><p><span></span>Gestão de tempo</p></li>
+                        <li class="card miniatura"><p><span></span>Trabalho em equipe</p></li>
+                        <li class="card miniatura"><p><span></span>Resolução e solução de problemas</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="config projects" id="projects"> <!--Projetos-->
+            <div class="e-project my-projects"> <!--Meus projetos-->
+                <div class="title-link"><h1>Projetos<div class="linha estilo2"></div></h1> <a href="#"><span class="material-symbols-outlined icon-link">folder</span></a></div>
+                <div class="list-projects">
+                    <ul>
+                        <li class="name-projects"><p><span></span>Portfólio</p><button class="btn-atual">Local atual</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linha divisao"></div>
+            <div class="e-project my-rSocial"> <!--Redes sociais-->
+                <h1>Redes Socias <div class="linha estilo2"></div></h1>
+                <div class="rSocial-atual">
+                    <div class="rSocial-one">
+                        <a href="https://github.com/caiounder"><img src="./img/icon_redes_sociais/icone_github.png" alt=""></a>
+                        <a href="https://www.instagram.com/caio.under/"><img src="./img/icon_redes_sociais/icone_instagram.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/caio-mendes-825a64232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./img/icon_redes_sociais/icone_linkedin.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="linha estilo3"></div>
+                <h1 class="cnt-h1">Contato <div class="linha estilo2"></div></h1>
+                <div class="contato">
+                    <p><span class="material-symbols-outlined">email</span>caiomendes.alander@hotmail.com</p>
+                    <p style="display: none;"><span class="material-symbols-outlined">call</span>+55</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="config development" id="development"> <!--Sobre as linguagens-->
+            <div class="conhecimento-atual"></div>
+            <div class="planejamento-futuro"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Criado por <span>Caio Mendes</span> @ 2024 </p> 
+        <p>Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
