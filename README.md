@@ -1,13 +1,13 @@
 
-# 📂 Portfólio Kaio Oliveira
+# 📂 Portfólio
 
 Repositório para armazenar meu primeiro projeto, um pequeno projeto descrevendo brevemente me apresentando, sobre mim e projetos
 
 ## 🧭 Experiência 
-16/06/2024 - Atualmente não tenho muito conhecimento em área de tecnologia, estou estudando e busco me desenvolver muito nessa área, portanto considerei melhor criar um portfólio colocando nele projetos que estarei estudando.
+22/06/2024 - Atualmente não tenho muito conhecimento em área de tecnologia, estou estudando e busco me desenvolver muito nessa área, portanto considerei melhor criar um portfólio colocando nele projetos que estarei estudando.
 
 ## 📚 Aprendizagem
-Data de atualização: 16/06/2024
+Data de atualização: 22/06/2024
 |             |    Aprendido    |    Experiência     |
 |:------------|:----------------|:-------------------|
 | *Front-End* | *HTML5 - CSS3*  |  **Intermediário** |
