@@ -20,7 +20,7 @@ Data de atualização: 22/06/2024
 |:----------|:--------------|
 | Portfólio |      60%      |
 
-Clique em [Projeto](https://kaiooa.github.io/portfolio/) para visualizar
+[Clique aqui](https://caiounder.github.io/portfolio/) para visualizar
 
 ## 📕 Sites utilizados para desenvolver o site
 |                      Sites                     |      Utilizado em      |
