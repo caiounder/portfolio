@@ -1,0 +1,8 @@
+header {
+    background-color: var(--azul-marinho-claro);
+    box-shadow: 0em 0.1em .5em .05em #022e8d;
+}
+
+.t-p {
+    color: #ffffff;
+}

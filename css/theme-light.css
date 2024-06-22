@@ -34,6 +34,15 @@ header {
     font-weight: 300;
 }
 
+.titulo span a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.titulo span a:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
 .titulo-mobile {
     display: none;
 }
@@ -597,9 +606,9 @@ footer p:first-of-type {
 }
 
 footer p span {
-    color: var(--azul-claro);
+    color: #5495f7;
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /*Retirado, planejamento futuro adicionar*/
