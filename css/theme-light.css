@@ -36,6 +36,7 @@ header {
 
 .titulo span a {
     text-decoration: none;
+    font-size: .9em;
     color: #222222;
 }
 
