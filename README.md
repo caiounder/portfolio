@@ -28,6 +28,7 @@ Data de atualização: 22/06/2024
 | [Google Fonts](https://fonts.google.com/)      |     Fontes do site     |
 | [Google Icons](https://fonts.google.com/icons) |         Icones         |
 | [Icon Icons](https://icon-icons.com/)          |         Icones         |
+| [Favicon - Icon Page](https://favicon.io/)     |     Icone da página    |
 
 
 
