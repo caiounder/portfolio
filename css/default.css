@@ -18,6 +18,10 @@ E por questão de organização.
     --roxo-azul: #6435FC;
     --roxo-claro: #A635FC;
     --roxo-meio-escuro: rgba(81, 11, 212, 0.7); /* opacity padrão 0.7 para deixar meio claro*/
+    /*Paleta Extra*/
+    --vermelho-rosado: #ED3F39;
+    --marrom-escuro: #291112;
+    --rosa: #FC7C79;
 }
 
 * {
