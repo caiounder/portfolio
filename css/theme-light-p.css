@@ -1,3 +1,85 @@
+/**/
+.em-desenvolvimento {
+    background-image: url("../img/background/lago-portugal.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.config-msg {
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 1em;
+    box-shadow: 0em .1em 1em .1em rgba(0, 0, 0, .8);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 35em;
+    width: 50em;
+}
+
+.config-msg-title {
+    margin-top: -30em;
+    position: absolute;
+}
+
+.config-msg-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3em;
+    font-weight: 300;
+    color: #e68e2a;
+}
+
+.separando {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.config-msg-error {
+    padding: 5em;
+}
+
+.config-msg-error p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.config-btn a {
+    text-decoration: none;
+
+    background-color: #e68e2a;
+    border-radius: .5em;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+    padding: .8em;
+}
+
+.config-btn a:hover {
+    background-color: #ffd3a1;
+    color: #e68e2a;
+
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+    .config-msg {
+        width: 90vw;
+    }
+}
+
+/**/
 header {
     /*Retirando config padrão portfólio*/
     box-shadow: none;
@@ -5,6 +87,7 @@ header {
     /*Fundo, visual e borda*/
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: .2em solid rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 .titulo {
@@ -43,6 +126,7 @@ main {
     flex-direction: column;
 
     width: 100vw;
+    display: none;
 }
 
 .config {
