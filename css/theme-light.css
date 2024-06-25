@@ -613,7 +613,7 @@ footer p span {
 }
 
 /*Retirado, planejamento futuro adicionar*/
-.development, .card button, .btn-acessar { 
+.development, .card button, .btn-acessar, .contato p { 
     display: none;
 }
 
